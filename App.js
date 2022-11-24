@@ -12,9 +12,9 @@ import { SafeAreaView, StatusBar, Text, useColorScheme } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import Post from "./src/components/Post";
 import HomeScreen from "./src/screens/Home/Home";
+import feed from "./assets/data/feed";
 
-/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
- * LTI update could not be added via codemod */
+const post1 = feed[1];
 
 const App = () => {
   const isDarkMode = useColorScheme() === "dark";
@@ -22,7 +22,6 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
@@ -30,7 +29,7 @@ const App = () => {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       {/* <HomeScreen /> */}
-      <Post />
+      <Post post={post1} />
     </SafeAreaView>
   );
 };
