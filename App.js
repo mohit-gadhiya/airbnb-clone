@@ -10,11 +10,8 @@ import React from "react";
 import { SafeAreaView, StatusBar, Text, useColorScheme } from "react-native";
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
-import Post from "./src/components/Post";
 import HomeScreen from "./src/screens/Home/Home";
-import feed from "./assets/data/feed";
-
-const post1 = feed[1];
+import SearchResultScreen from "./src/screens/SearchResult";
 
 const App = () => {
   const isDarkMode = useColorScheme() === "dark";
@@ -29,7 +26,7 @@ const App = () => {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       {/* <HomeScreen /> */}
-      <Post post={post1} />
+      <SearchResultScreen />
     </SafeAreaView>
   );
 };
