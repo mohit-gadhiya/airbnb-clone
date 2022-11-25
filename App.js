@@ -11,6 +11,7 @@ import { SafeAreaView, StatusBar, Text, useColorScheme } from "react-native";
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import DestinationSearch from "./src/screens/DestinationSearch";
+import Guests from "./src/screens/Guests";
 import HomeScreen from "./src/screens/Home/Home";
 import SearchResultScreen from "./src/screens/SearchResult";
 
@@ -28,7 +29,8 @@ const App = () => {
       />
       {/* <HomeScreen /> */}
       {/* <SearchResultScreen /> */}
-      <DestinationSearch />
+      {/* <DestinationSearch /> */}
+      <Guests />
     </SafeAreaView>
   );
 };
