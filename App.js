@@ -10,6 +10,7 @@ import React from "react";
 import { SafeAreaView, StatusBar, Text, useColorScheme } from "react-native";
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
+import DestinationSearch from "./src/screens/DestinationSearch";
 import HomeScreen from "./src/screens/Home/Home";
 import SearchResultScreen from "./src/screens/SearchResult";
 
@@ -26,7 +27,8 @@ const App = () => {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       {/* <HomeScreen /> */}
-      <SearchResultScreen />
+      {/* <SearchResultScreen /> */}
+      <DestinationSearch />
     </SafeAreaView>
   );
 };
